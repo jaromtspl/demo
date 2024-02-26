@@ -36,15 +36,17 @@ function Navbar() {
                 </div>
               <div className='hidden lg:block'>
               <div className='flex justify-center items-center  gap-3 py-5'>
-                    <div className='w-10 h-10 bg-gray-200 flex justify-center items-center rounded-full'>
+                    <a href="https://www.instagram.com/" target='_blank'><div className='w-10 h-10 bg-gray-200 flex justify-center items-center rounded-full'>
                         <FontAwesomeIcon icon={faInstagram} className='cursor-pointer'/>
-                    </div>
+                    </div></a>
+                    <a href="https://twitter.com/?lang=en" target='_blank'>
                     <div className='w-10 h-10 bg-gray-200 flex justify-center items-center rounded-full'>
                         <FontAwesomeIcon icon={faTwitter} className='cursor-pointer'/>
-                    </div>
+                    </div></a>
+                    <a href="https://in.linkedin.com/" target='_blank'>
                     <div className='w-10 h-10 bg-gray-200 flex justify-center items-center rounded-full'>
                         <FontAwesomeIcon icon={faLinkedinIn} className='cursor-pointer'/>
-                    </div>
+                    </div></a>
                 </div>
               </div>
             </div>

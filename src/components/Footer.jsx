@@ -16,7 +16,7 @@ export default function Footer() {
             <li><FontAwesomeIcon icon={faAngleRight} className='mr-1'/><span>Let us bring your vision to life with innovative web solutions.</span></li>
         </ul>
       </div>
-      <div className='lg:ml-14'>
+      <div className='lg:ml-14 hidden md:block'>
         <h1 className='lg:text-lg text-base font-medium py-5'>Quick Links</h1>
         <ul className=' space-y-2'>
             <li><FontAwesomeIcon icon={faAngleRight}  className='mr-1'/> <span>Home</span></li>

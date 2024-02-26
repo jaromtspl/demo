@@ -10,7 +10,7 @@ export default function nav() {
   const [Scrolling, setScrolling] = useState(false)
   const [isOpen, setIsOpen] = useState(false);
 
-  
+
   const handleScroll = () => {
     const element = document.getElementById("nav");
     if (element) {
@@ -37,7 +37,7 @@ export default function nav() {
 
 
 
-  var cls = `flex justify-between lg:w-[90%] bg-cyan-100 bg-opacity-15 z-100 mx-auto text-white tracking-wider sticky top-0 transition-all duration-500 }`
+  var cls = `flex justify-between lg:w-[90%] bg-cyan-100 bg-opacity-15 z-100 mx-auto text-white tracking-wider sticky top-0 md:transition-all md:duration-500 }`
 
   return (
 

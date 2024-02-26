@@ -41,7 +41,7 @@ export default function nav() {
 
   return (
 
-    <nav className={cls} style={Scrolling ? { backgroundColor: "#228eab", width: "100%", zIndex: "50" } : {}} id='nav'>
+    <nav className={cls} style={Scrolling ? { backgroundColor: "#228eab", width: "100%", zIndex: "3" } : {}} id='nav'>
       <SideNav side={side} setSide={setside} isOpen={isOpen} setIsOpen={setIsOpen}/>
       <Careers isOpen={isOpen} setIsOpen={setIsOpen}/>
       <div className=' hidden lg:flex space-x-20 p-5 lg:font-bold '>

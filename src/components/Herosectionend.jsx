@@ -78,7 +78,7 @@ function Herosectionend() {
     }, []);
 
     return (
-        <div id="testimonials" className="relative bg-cover h-[350px] lg:h-[300px] bg-center" style={{ backgroundImage: "url('https://ik.imagekit.io/7ymcb1ihc/tripsweet/write-img-1.jpg?updatedAt=1708336411635')" }}>
+        <div id="testimonials" className="relative bg-cover h-[350px] lg:h-[300px] bg-center" style={{ backgroundImage: "url('https://ik.imagekit.io/7ymcb1ihc/tripsweet/write-img-1.jpg?updatedAt=1708336411635')" , zIndex:"1"}}>
             <div className="h-[100%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 absolute inset-0 backdrop-filter backdrop-blur-md text-[#302386] ">
                 <div className='p-4 flex justify-start md:justify-center items-center gap-6'>
                     <div>

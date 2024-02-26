@@ -7,7 +7,7 @@ function AboutUs() {
 
     const [isHover, setIsHover] = useState(false)
     return (
-        <div name="about" className="py-16">
+        <div name="about" className="py-16" style={{zIndex:"1"}}>
             <div className="2xl:container relative ">
                 <div className="w-[90%] mx-auto grid grid-cols-1 ">
                     <div className="flex justify-start items-start flex-col rounded-lg p-4 border-2 border-gray ">

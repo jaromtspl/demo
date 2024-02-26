@@ -37,7 +37,7 @@ export default function nav() {
 
 
 
-  var cls = `flex justify-between lg:w-[90%] md:bg-cyan-100 bg-[#228eab] md:bg-opacity-15 mx-auto text-white tracking-wider sticky top-0 md:transition-all md:duration-500 }`
+  var cls = `flex justify-between lg:w-[90%]  md:bg-cyan-100 bg-[#228eab] md:bg-opacity-15 z-10 mx-auto text-white tracking-wider sticky top-0 md:transition-all md:duration-500 }`
 
   return (
 

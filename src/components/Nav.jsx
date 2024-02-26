@@ -37,7 +37,7 @@ export default function nav() {
 
 
 
-  var cls = `flex justify-between lg:w-[90%] bg-cyan-100 bg-opacity-15 mx-auto text-white tracking-wider sticky top-0 md:transition-all md:duration-500 }`
+  var cls = `flex justify-between lg:w-[90%] md:bg-cyan-100 bg-[#228eab] md:bg-opacity-15 mx-auto text-white tracking-wider sticky top-0 md:transition-all md:duration-500 }`
 
   return (
 
@@ -52,8 +52,8 @@ export default function nav() {
           <h2>Contact</h2>
         </Link>
       </div>
-      <div className='flex p-5 lg:font-normal lg:hidden items-center space-x-2 text-blue-950'>
-        <FontAwesomeIcon icon={faBars} onClick={Clicked} />
+      <div className='flex p-5 lg:font-normal lg:hidden items-center space-x-2 text-blue-950' onClick={Clicked}>
+        <FontAwesomeIcon icon={faBars} />
         <h1 className='font-medium'>Menu</h1>
       </div>
       <div className='flex justify-center items-center' >

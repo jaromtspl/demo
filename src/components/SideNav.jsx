@@ -23,11 +23,11 @@ export default function SideNav({side,setSide,isOpen,setIsOpen}) {
       <h2 className='text-blue-900 bg-white h-full p-5 font-semibold flex justify-between items-center transition-all duration-700  text-base'><span>Trip Sweet</span><FontAwesomeIcon icon={faTimes} onClick={Clicked}/></h2>
       </div>
 
-      <ul className='py-2 px-5 text-sm'>
-      <Link to='home' smooth={true} duration={500} >  <li className='cursor-pointer mt-2' onClick={Clicked}>Home</li></Link>
-       <Link to='about' smooth={true} duration={500}><li className='cursor-pointer mt-2' onClick={Clicked}>About Us</li></Link>
-       <li className='cursor-pointer mt-2'  onClick={() => setIsOpen(true)} >Careers</li>
-       <Link to="contact" smooth={true} duration={500}> <li  className='cursor-pointer mt-2'  onClick={Clicked}>Contact</li></Link>
+      <ul className='py-2 px-5 text-base'>
+      <Link to='home' smooth={true} duration={500} >  <li className='cursor-pointer mt-6' onClick={Clicked}>Home</li></Link>
+       <Link to='about' smooth={true} duration={500}><li className='cursor-pointer mt-6' onClick={Clicked}>About Us</li></Link>
+       <li className='cursor-pointer mt-6'  onClick={() => setIsOpen(true)} >Careers</li>
+       <Link to="contact" smooth={true} duration={500}> <li  className='cursor-pointer mt-6'  onClick={Clicked}>Contact</li></Link>
        </ul>
       
     </div>

@@ -37,11 +37,11 @@ export default function nav() {
 
 
 
-  var cls = `flex justify-between lg:w-[90%] bg-cyan-100 bg-opacity-15 z-100 mx-auto text-white tracking-wider sticky top-0 md:transition-all md:duration-500 }`
+  var cls = `flex justify-between lg:w-[90%] bg-cyan-100 bg-opacity-15 mx-auto text-white tracking-wider sticky top-0 md:transition-all md:duration-500 }`
 
   return (
 
-    <nav className={cls} style={Scrolling ? { backgroundColor: "#228eab", width: "100%", zIndex: "3" } : {}} id='nav'>
+    <nav className={cls} style={Scrolling ? { backgroundColor: "#228eab", width: "100%", zIndex: "50" } : {}} id='nav'>
       <SideNav side={side} setSide={setside} isOpen={isOpen} setIsOpen={setIsOpen}/>
       <Careers isOpen={isOpen} setIsOpen={setIsOpen}/>
       <div className=' hidden lg:flex space-x-20 p-5 lg:font-bold '>

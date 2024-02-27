@@ -24,27 +24,26 @@ function Navbar() {
                     </div>
                 </div>
 
-                <div className='flex justify-center items-center gap-1 md:gap-3 '>
+                <div className=' flex justify-center items-center gap-1 md:gap-3'>
                     <div>
                         <FontAwesomeIcon icon={faPhone} size={'xl'} className='hidden md:block' />
-                        <FontAwesomeIcon icon={faPhone} size={'l'}  className='md:hidden'/>
                     </div>
-                    <div className='text-base md:text-l'>
+                    <div className='text-base md:text-l hidden md:block'>
                         <h2>Call Us</h2>
                         <h2>+91-987456321</h2>
                     </div>
                 </div>
-              <div className='hidden lg:block'>
+              <div>
               <div className='flex justify-center items-center  gap-3 py-5'>
-                    <a href="https://www.instagram.com/" target='_blank'><div className='w-10 h-10 bg-gray-200 flex justify-center items-center rounded-full'>
-                        <FontAwesomeIcon icon={faInstagram} className='cursor-pointer'/>
+                    <a href="https://www.instagram.com/" target='_blank'><div className='w-10 h-10  hover:bg-blue-900 hover:text-white  bg-gray-200 flex justify-center items-center rounded-full'>
+                        <FontAwesomeIcon icon={faInstagram} className='  cursor-pointer'/>
                     </div></a>
                     <a href="https://twitter.com/?lang=en" target='_blank'>
-                    <div className='w-10 h-10 bg-gray-200 flex justify-center items-center rounded-full'>
+                    <div className='w-10 h-10 bg-gray-200 flex justify-center items-center rounded-full hover:bg-blue-900 hover:text-white'>
                         <FontAwesomeIcon icon={faTwitter} className='cursor-pointer'/>
                     </div></a>
                     <a href="https://in.linkedin.com/" target='_blank'>
-                    <div className='w-10 h-10 bg-gray-200 flex justify-center items-center rounded-full'>
+                    <div className='w-10 h-10 bg-gray-200 flex justify-center items-center rounded-full hover:bg-blue-900 hover:text-white '>
                         <FontAwesomeIcon icon={faLinkedinIn} className='cursor-pointer'/>
                     </div></a>
                 </div>

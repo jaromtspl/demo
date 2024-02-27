@@ -2,8 +2,9 @@ import React from 'react';
 import Logo from '../assets/logo.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram} from '@fortawesome/free-brands-svg-icons';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 function Navbar() {
     return (
@@ -40,7 +41,7 @@ function Navbar() {
                     </div></a>
                     <a href="https://twitter.com/?lang=en" target='_blank'>
                     <div className='w-10 h-10 bg-gray-200 flex justify-center items-center rounded-full hover:bg-blue-900 hover:text-white'>
-                        <FontAwesomeIcon icon={faTwitter} className='cursor-pointer'/>
+                        <FontAwesomeIcon icon={faXTwitter} className='cursor-pointer'/>
                     </div></a>
                     <a href="https://in.linkedin.com/" target='_blank'>
                     <div className='w-10 h-10 bg-gray-200 flex justify-center items-center rounded-full hover:bg-blue-900 hover:text-white '>

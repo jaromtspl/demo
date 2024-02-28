@@ -28,9 +28,9 @@ function AboutUs() {
                                 >
                                     {isHover && ( // Render text content only when isHover is true
                                         <div
-                                            className={`absolute bottom-0 left-0 rounded-lg w-full bg-blue-800 text-white bg-opacity-75 p-5 h-[100%] transition-transform duration-500 ${isHover ? 'translate-y-0' : '-translate-y-full'}`}
+                                            className={`absolute bottom-0 left-0 rounded-lg w-full bg-[#228eab] text-white bg-opacity-75 p-5 h-[100%] transition-transform duration-500 ${isHover ? 'translate-y-0' : '-translate-y-full'}`}
                                         >
-                                            <h1 className='text-xl py-2'>Who We Are?</h1>
+                                            <h1 className='text-xl py-2 font-bold'>Who We Are ?</h1>
                                             <p className='text-lg'>
                                             At TripSweet Web Technology & IT, we're more than just a technology company. We're the architects of digital transformation, the creators of innovative solutions, and the partners in your journey towards success.
                                             </p>

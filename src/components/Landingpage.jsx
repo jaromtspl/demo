@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 
 export default function LandingPage() {
   return (
-    <section className='lg:w-[90%] mx-auto mt-20 lg:mt-32 w-11/12 text-white tracking-wider h-[500px]'>
+    <section name="landing" className='lg:w-[90%] mx-auto mt-20 lg:mt-32 w-11/12 text-white tracking-wider h-[500px]'>
       <h2>Welcome To Trip Sweet IT Solution</h2>
       <h1 className='py-6 text-2xl lg:text-4xl font-semibold'>
         Empowering Growth with Seamless Technical Solutions

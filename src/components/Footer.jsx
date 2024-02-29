@@ -1,12 +1,19 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMapMarkerAlt, faDesktop,  faAngleRight} from '@fortawesome/free-solid-svg-icons';
+import { Helmet } from 'react-helmet';
 
 export default function Footer() {
     var date = new Date().getFullYear();
 
   return (
     <div className='2xl:container bg-[#228eab] text-white mt-16'>
+       <Helmet>
+                <title>TripSweet - Expert IT Services in Madurai | TSPL Web Tech</title>
+                <meta name="description" content="TripSweet (TSPL) offers expert IT services including web development, software solutions, and IT consulting in Madurai. Contact us today to learn more about TripSweet Madurai and TSPL Web Tech." />
+                <link rel="canonical" href="https://triptech.netlify.app" />
+                {/* Add more meta tags as needed */}
+            </Helmet>
         <div className=' w-[90%] mx-auto lg:grid lg:grid-cols-4 grid-cols-3 gap-10 text-xs lg:text-sm'>
       <div>
         <h1 className='lg:text-lg text-base font-medium py-5'>About Us</h1>

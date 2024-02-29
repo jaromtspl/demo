@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
+import Helmet from 'react-helmet';
 
 function Contactpage() {
     const [name, setName] = useState('');
@@ -37,6 +38,12 @@ function Contactpage() {
 
     return (
         <div name='contact' style={{ scrollBehavior: "smooth" }} className='2xl:screen py-6'>
+             <Helmet>
+                <title>TripSweet - Expert IT Services in Madurai | TSPL Web Tech</title>
+                <meta name="description" content="TripSweet (TSPL) offers expert IT services including web development, software solutions, and IT consulting in Madurai. Contact us today to learn more about TripSweet Madurai and TSPL Web Tech." />
+                <link rel="canonical" href="https://triptech.netlify.app" />
+                {/* Add more meta tags as needed */}
+            </Helmet>
             <div className='w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8'>
                 <div className='justify-center flex items-center'>
                     <img src="https://ik.imagekit.io/7ymcb1ihc/tripsweet/10586.jpg?updatedAt=1708345359241" alt="img" />

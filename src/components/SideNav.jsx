@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import {Helmet} from 'react-helmet';
 
 export default function SideNav({side,setSide,isOpen,setIsOpen}) {
 
@@ -18,6 +19,12 @@ export default function SideNav({side,setSide,isOpen,setIsOpen}) {
   return (
 
     <div className={Class}>
+         <Helmet>
+                <title>TripSweet - Expert IT Services in Madurai | TSPL Web Tech</title>
+                <meta name="description" content="TripSweet (TSPL) offers expert IT services including web development, software solutions, and IT consulting in Madurai. Contact us today to learn more about TripSweet Madurai and TSPL Web Tech." />
+                <link rel="canonical" href="https://triptech.netlify.app" />
+                {/* Add more meta tags as needed */}
+            </Helmet>
      
       <div>
       <h2 className='text-blue-900 bg-white h-full p-5 font-semibold flex justify-between items-center transition-all duration-700  text-base'><span>Trip Sweet</span><FontAwesomeIcon icon={faTimes} onClick={Clicked}/></h2>

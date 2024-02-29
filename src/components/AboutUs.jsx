@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Helmet } from 'react-helmet';
 
 
 function AboutUs() {
@@ -8,6 +8,12 @@ function AboutUs() {
     const [isHover, setIsHover] = useState(false)
     return (
         <div name="about" className="py-16" style={{zIndex:"1"}}>
+             <Helmet>
+                <title>TripSweet - Expert IT Services in Madurai | TSPL Web Tech</title>
+                <meta name="description" content="TripSweet (TSPL) offers expert IT services including web development, software solutions, and IT consulting in Madurai. Contact us today to learn more about TripSweet Madurai and TSPL Web Tech." />
+                <link rel="canonical" href="https://triptech.netlify.app" />
+                {/* Add more meta tags as needed */}
+            </Helmet>
             <div className="2xl:container relative ">
                 <div className="w-[90%] mx-auto grid grid-cols-1 ">
                     <div className="flex justify-start items-start flex-col rounded-lg p-4 border-2 border-gray ">

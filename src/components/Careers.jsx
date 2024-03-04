@@ -28,8 +28,11 @@ export default function Careers({ isOpen, setIsOpen }) {
     };
 
     try {
+      console.log('Form Data:', formData);
+      console.log('Form Values:', Object.values(formData));
+      
       if (Object.values(formData).every(value => value !== '')) {
-        const response = await emailjs.sendForm('service_8k4kz96', 'template_jvrw8j6', e.target, 'K1QG-gfSz2IXlHIO7');
+        const response = await emailjs.sendForm('service_pleri7a', 'template_jvrw8j6', e.target, 'K1QG-gfSz2IXlHIO7');
         console.log('SUCCESS!', response.status, response.text);
         setSubmissionStatus('Submitted');
         // Clearing form fields after submission
@@ -38,15 +41,19 @@ export default function Careers({ isOpen, setIsOpen }) {
         setRole('');
         setResume('');
         setCoverLetter('');
-        
+        // Close the modal after submission
+        setTimeout(() => {
+          setIsOpen(false);
+        }, 3000); // Close modal after 3 seconds
       } else {
         console.log('Please fill in all fields');
-        setSubmissionStatus('Please Fill in all Fields');
+        setSubmissionStatus('Please fill in all fields');
       }
     } catch (error) {
       console.log('FAILED...', error);
       setSubmissionStatus('Failed to submit. Please try again later.');
     }
+    
   };
 
   const modalClass = isOpen ? "fixed inset-0 flex justify-center items-center bg-gray-800 bg-opacity-50" : "hidden";
@@ -142,7 +149,7 @@ export default function Careers({ isOpen, setIsOpen }) {
               </button>
             </div>
           </form>
-          <p className={`mt-4 text-center text-${submissionStatus === 'Submitted' ? 'green' : 'red'}-700`}>
+          <p className="mt-4 text-center" style={{ color: submissionStatus === 'Submitted' ? 'green' : 'red' }}>
             {submissionStatus}
           </p>
         </div>

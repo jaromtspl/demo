@@ -32,7 +32,7 @@ export default function Careers({ isOpen, setIsOpen }) {
       console.log('Form Values:', Object.values(formData));
       
       if (Object.values(formData).every(value => value !== '')) {
-        const response = await emailjs.sendForm('service_8k4kz96', 'template_jvrw8j6', e.target, 'K1QG-gfSz2IXlHIO7');
+        const response = await emailjs.sendForm('service_pleri7a', 'template_jvrw8j6', e.target, 'K1QG-gfSz2IXlHIO7');
         console.log('SUCCESS!', response.status, response.text);
         setSubmissionStatus('Submitted');
         // Clearing form fields after submission

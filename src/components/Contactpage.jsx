@@ -15,7 +15,7 @@ function Contactpage() {
         e.preventDefault();
         setIsLoading(true);
 
-        emailjs.sendForm('service_pleri7a', 'template_f3ykpz8', formRef.current, 'K1QG-gfSz2IXlHIO7')
+        emailjs.sendForm('service_c7wre6j', 'template_f3ykpz8', formRef.current, 'K1QG-gfSz2IXlHIO7')
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
                 setIsLoading(false);

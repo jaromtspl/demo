@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import emailjs from 'emailjs-com';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -10,6 +10,7 @@ export default function Careers({ isOpen, setIsOpen }) {
   const [resume, setResume] = useState('');
   const [coverLetter, setCoverLetter] = useState('');
   const [submissionStatus, setSubmissionStatus] = useState('');
+  const formRef = useRef(null); // Define formRef
 
   const handleClose = () => {
     setIsOpen(false);
@@ -32,7 +33,7 @@ export default function Careers({ isOpen, setIsOpen }) {
       console.log('Form Values:', Object.values(formData));
       
       if (Object.values(formData).every(value => value !== '')) {
-        const response = await emailjs.sendForm('service_8k4kz96', 'template_jvrw8j6', e.target, 'K1QG-gfSz2IXlHIO7');
+        const response = await emailjs.sendForm('service_c7wre6j', 'template_4erugr7', formRef.current, 'K1QG-gfSz2IXlHIO7');
         console.log('SUCCESS!', response.status, response.text);
         setSubmissionStatus('Submitted');
         // Clearing form fields after submission
@@ -68,7 +69,7 @@ export default function Careers({ isOpen, setIsOpen }) {
           >
             <FontAwesomeIcon icon={faTimes} size='1x' />
           </button>
-          <form onSubmit={handleSubmit}>
+          <form ref={formRef} onSubmit={handleSubmit}>
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="fullName">
                 Full Name:

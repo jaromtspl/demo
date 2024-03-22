@@ -77,7 +77,7 @@ export default function Nav() {
     <nav className={cls} style={scrolling ? { backgroundColor: "#228eab", width: "100%", zIndex: "3" } : {}} id='nav'>
       <SideNav side={side} setSide={setSide} isOpen={isOpen} setIsOpen={setIsOpen}/>
       <Careers isOpen={isOpen} setIsOpen={setIsOpen}/>
-      <div className='hidden lg:flex space-x-20 p-5 lg:font-bold'>
+      <div className='hidden lg:flex space-x-20  p-5 lg:font-bold'>
         <Link to='home' smooth={true} duration={500}><h2 className={activeSection === "home" ? 'text-[#302386] hover:text-[#302386] transition-all duration-300 cursor-pointer' : 'hover:text-[#302386] transition-all duration-300 cursor-pointer'}>Home</h2></Link>
         <Link to="about" smooth={true} duration={500} offset={-60}><h2 className={activeSection === "about" ? 'text-[#302386] hover:text-[#302386] transition-all duration-300 cursor-pointer' : 'hover:text-[#302386] transition-all duration-300 cursor-pointer'}>About Us</h2></Link>
         <h2 className='cursor-pointer hover:text-[#302386] transition-all duration-300' onClick={() => setIsOpen(true)}>Careers</h2>

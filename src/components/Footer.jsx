@@ -38,7 +38,7 @@ export default function Footer() {
           <h1 className='lg:text-lg text-base font-medium py-5'>Contact Us</h1>
           <ul className=' space-y-2'>
             <li><FontAwesomeIcon icon={faDesktop} className='mr-1' /><span>Tripsweet Web Technologies & IT</span></li>
-            <li><FontAwesomeIcon icon={faMapMarkerAlt} className='mr-1' /><span>#13 A HMS Colony Main Road , Virattipatu Madurai-625016, Tamilnadu, India.</span></li>
+            <li><FontAwesomeIcon icon={faMapMarkerAlt} className='mr-1' /><span>#13 A HMS Colony Main Road , Virattipatu Madurai-625016, Tamilnadu, India..</span></li>
             <li><FontAwesomeIcon icon={faPhone} className='mr-1' /><span>+91 73888 23888</span></li>
             <li><FontAwesomeIcon icon={faEnvelope} className='mr-1' /><span>websitetspl@gmail.com</span></li>
           </ul>
